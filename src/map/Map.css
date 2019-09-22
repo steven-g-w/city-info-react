@@ -1,0 +1,22 @@
+
+
+#facility-detail-popup {
+  color: black;
+  width: 180px;
+}
+
+.close-popup {
+  position: absolute;
+  right: 5px;
+  text-align: center;
+  top: 2px;
+  cursor: pointer;
+}
+
+i {
+  color: lightslategrey;
+  margin: 3px;
+}
+i.active {
+  color: green;
+}

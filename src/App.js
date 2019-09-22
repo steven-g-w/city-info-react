@@ -1,32 +1,55 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import Map from './map/Map'
 import './App.css';
 
-function App() {
-  const state = {
-    parentalFacilities: []
+class App extends Component {
+
+  state = {
+    facilities: []
+  };
+
+  key = null;
+
+  test() {
+    console.log('test')
   }
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Map />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  componentDidMount() {
+    this.fetchData()
+  }
+
+  fetchData() {
+    fetch(`https://cityinfoapiaustraliaeast.azurewebsites.net/parental-facilities${this.key ? `?key=${this.key}` : ''}`)
+      .then(res => res.json())
+      .then((data) => this.setState(state => ({ facilities: data })))
+      .catch(console.log)
+  }
+
+  handleChange(event) {
+    this.key = event.target.value;
+  }
+
+  onSearch() {
+    this.fetchData();
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h2>Find Parental Facilities</h2>
+          <div className="input-group mb-3">
+            <input type="text" className="form-control" placeholder="Search Facilities" onChange={e => this.handleChange(e)}/>
+            <div className="input-group-append">
+              <button className="btn btn-outline-secondary" type="button" onClick={() => this.onSearch()}>Search</button>
+            </div>
+          </div>
+          <Map state={this.state} />
+        </header>
+      </div>
+    );
+  }
 }
 
 export default App;
