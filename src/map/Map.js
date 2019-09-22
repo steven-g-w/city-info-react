@@ -72,7 +72,10 @@ class Map extends Component {
                 </span>
               <h6>{this.state.popup.name}</h6>
               <p>{this.state.popup.description}</p>
-              <p>Rating: {this.state.popup.rating}</p>
+              <p>Rating: 
+                {[0,1,2,3,4].map(num => 
+                <span class={`${this.state.popup.rating > num ? 'fas' : 'far'} fa-star`}></span>)}
+              </p>
               <p>Last Cleaned: {this.state.popup.lastCleanedAt}</p>
               <p>
                 <i className={`fas fa-utensils fa-2x ${this.state.popup.amenities.microwave ? ' active' : ''}`}></i>
