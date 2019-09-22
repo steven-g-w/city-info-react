@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "06ff4144ffafc6effe7a1b4f991ab9d2",
+    "revision": "a3dad7d0036a4df9a9c55071e9744481",
     "url": "/city-info-react/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/city-info-react/static/css/2.e71d8db5.chunk.css"
   },
   {
-    "revision": "9298dc8ba5a16e2a6f51",
+    "revision": "f77e52c0a0b8d47e6b2b",
     "url": "/city-info-react/static/css/main.4d362aef.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/city-info-react/static/js/2.93bb1398.chunk.js"
   },
   {
-    "revision": "9298dc8ba5a16e2a6f51",
-    "url": "/city-info-react/static/js/main.0503698b.chunk.js"
+    "revision": "f77e52c0a0b8d47e6b2b",
+    "url": "/city-info-react/static/js/main.390d2a17.chunk.js"
   },
   {
     "revision": "bb4082c38f5d1268db4c",

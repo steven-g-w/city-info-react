@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/city-info-react/static/css/main.4d362aef.chunk.css",
-    "main.js": "/city-info-react/static/js/main.0503698b.chunk.js",
-    "main.js.map": "/city-info-react/static/js/main.0503698b.chunk.js.map",
+    "main.js": "/city-info-react/static/js/main.390d2a17.chunk.js",
+    "main.js.map": "/city-info-react/static/js/main.390d2a17.chunk.js.map",
     "runtime-main.js": "/city-info-react/static/js/runtime-main.838f7773.js",
     "runtime-main.js.map": "/city-info-react/static/js/runtime-main.838f7773.js.map",
     "static/css/2.e71d8db5.chunk.css": "/city-info-react/static/css/2.e71d8db5.chunk.css",
     "static/js/2.93bb1398.chunk.js": "/city-info-react/static/js/2.93bb1398.chunk.js",
     "static/js/2.93bb1398.chunk.js.map": "/city-info-react/static/js/2.93bb1398.chunk.js.map",
     "index.html": "/city-info-react/index.html",
-    "precache-manifest.9b6713a2ca52328714a05fc639af2f68.js": "/city-info-react/precache-manifest.9b6713a2ca52328714a05fc639af2f68.js",
+    "precache-manifest.d623925b1741ab676615b435e89d7b4d.js": "/city-info-react/precache-manifest.d623925b1741ab676615b435e89d7b4d.js",
     "service-worker.js": "/city-info-react/service-worker.js",
     "static/css/2.e71d8db5.chunk.css.map": "/city-info-react/static/css/2.e71d8db5.chunk.css.map",
     "static/css/main.4d362aef.chunk.css.map": "/city-info-react/static/css/main.4d362aef.chunk.css.map",
