@@ -46,6 +46,7 @@ class App extends Component {
             </div>
           </div>
           <Map state={this.state} />
+          <small>Click on each point for detailed information</small>
         </header>
       </div>
     );
