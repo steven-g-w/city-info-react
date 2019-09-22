@@ -3,7 +3,7 @@ import ReactMapboxGl, { Layer, Feature, Popup } from "react-mapbox-gl";
 import './Map.css';
 
 class Map extends Component {
-  
+
   constructor(props) {
     super(props)
     this.props = props;
@@ -71,7 +71,9 @@ class Map extends Component {
                 x
                 </span>
               <h6>{this.state.popup.name}</h6>
-              <small>{this.state.popup.description}</small>
+              <p>{this.state.popup.description}</p>
+              <p>Rating: {this.state.popup.rating}</p>
+              <p>Last Cleaned: {this.state.popup.lastCleanedAt}</p>
               <p>
                 <i className={`fas fa-utensils fa-2x ${this.state.popup.amenities.microwave ? ' active' : ''}`}></i>
                 <i className={`fas fa-baby fa-2x ${this.state.popup.amenities.changeTable ? ' active' : ''}`}></i>
